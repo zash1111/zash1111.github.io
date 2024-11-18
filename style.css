@@ -1,0 +1,16 @@
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 20%;
+    
+  }
+  
+.centered-div {
+    justify-items: center;
+    width: 100%;
+}
+
+.project-holder {
+    max-width: 80%;
+}
