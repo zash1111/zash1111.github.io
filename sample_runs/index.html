@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Portfolio Sample Runs</title>
+        <link rel="stylesheet" href="../style.css">
+        <style type="text/css">
+          body{line-height:1.6;font-size:18px;color:#111D4A;background-color: #F0EAD6;padding:010px}h1,h2,h3{line-height:1.2}
+          header{margin-bottom: 2%;line-height:1.6;font-size:18px;color:#111D4A;background-color: #FFCF99;padding:010px}h1,h2,h3{line-height:1.2}
+        </style>
+    </head>
+
+    <header>
+        <div class="container">
+          <div class="centered-div">
+            <h1>Portfolio Sample Runs</h1>
+          </div>
+        </div>
+    </header>
+
+    <body>
+        <div class="container">
+            <div class="centered-div">
+                <button type="button" class="collapsible">Motif Finder Sample</button>
+                <div class="content">
+                    <p>THis is from a school project, for a substring finder based on DNA motifs</p>
+                    <img src="intro.jpg" alt="Get user input">
+                    <p>Start with getting input from the user and storing it</p>
+                    <img src="all_candidates array.jpg" alt="Print all possible substrings">
+                    <p>We then needed to create a 2D array for all possible substrings of a length</p>
+                    <img src="motif_search.jpg" alt="Find all motifs that match">
+                    <p>Ending with finding all the common motifs</p>
+                </div>
+            </div>
+        </div>
+    </body>
+
+    <script>
+        var coll = document.getElementsByClassName("collapsible");
+        var i;
+        
+        for (i = 0; i < coll.length; i++) {
+          coll[i].addEventListener("click", function() {
+            this.classList.toggle("active");
+            var content = this.nextElementSibling;
+            if (content.style.display === "block") {
+              content.style.display = "none";
+            } else {
+              content.style.display = "block";
+            }
+          });
+        }
+    </script>
+
+</html>
